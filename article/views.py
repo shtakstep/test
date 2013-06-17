@@ -37,6 +37,7 @@ def article(request, article_id=1):
 
 def language(request, language='en-gb'):
 
+
     response = HttpResponse("settings language %s" % language)
 
     response.set_cookie('lang', language)
